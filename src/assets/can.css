@@ -1,0 +1,183 @@
+* {
+	margin: 0;
+	padding: 0;
+  }
+  
+  html,
+  body {
+	height: 100%;
+  }
+  
+  .can-flex {
+	display: flex;
+  }
+  
+  .can-flex-col {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .can-flex-shrink {
+	flex-shrink: 0;
+  }
+  
+  /* 换行 */
+  .can-flex-wrap {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  /* 不换行 */
+  .can-flex-nowrap {
+	display: flex;
+	flex-wrap: nowrap;
+  }
+  
+  /* 垂直水平居中 */
+  .can-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  /* 垂直居中 */
+  .can-col-center {
+	display: flex;
+	align-items: center;
+  }
+  
+  .can-flex-col.can-col-center {
+	display: flex;
+	justify-content: center !important;
+	align-items: stretch;
+  }
+  
+  
+  /* 顶部对齐 */
+  .can-col-top {
+	display: flex;
+	align-items: flex-start;
+  }
+  
+  .can-flex-col.can-col-top {
+	display: flex;
+	justify-content: flex-start !important;
+	align-items: stretch;
+  }
+  
+  /* 底部对齐 */
+  .can-col-bottom {
+	display: flex;
+	align-items: flex-end;
+  }
+  
+  .can-flex-col.can-col-bottom {
+	display: flex;
+	justify-content: flex-end !important;
+	align-items: stretch;
+  }
+  
+  /* 左边对齐 */
+  .can-row-left {
+	display: flex;
+	justify-content: flex-start;
+  }
+  
+  .can-flex-col.can-row-left {
+	display: flex;
+	align-items: flex-start !important;
+	justify-content: flex-start;
+  }
+  
+  /* 水平居中 */
+  .can-row-center {
+	display: flex;
+	justify-content: center;
+  }
+  
+  .can-flex-col.can-row-center {
+	display: flex;
+	align-items: center !important;
+	justify-content: flex-start;
+  }
+  
+  /* 右边对齐 */
+  .can-row-right {
+	display: flex;
+	justify-content: flex-end;
+  }
+  
+  .can-flex-col.can-row-right {
+	display: flex;
+	align-items: flex-end !important;
+	justify-content: flex-start;
+  }
+  
+  /* 水平两端对齐，项目之间的间隔都相等 */
+  .can-row-between {
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  .can-flex-col.can-col-between {
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  /* 水平每个项目两侧的间隔相等，所以项目之间的间隔比项目与父元素两边的间隔大一倍 */
+  .can-row-around {
+	display: flex;
+	justify-content: space-around;
+  }
+  
+  .can-flex-col.can-col-around {
+	display: flex;
+	justify-content: space-around;
+  }
+  
+  .can-flex-1 {
+	flex: 1;
+  }
+  
+  .can-flex-2 {
+	flex: 2;
+  }
+  
+  .can-flex-3 {
+	flex: 3;
+  }
+  
+  .can-line-1 {
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	line-clamp: 1;
+	-webkit-box-orient: vertical;
+  }
+  
+  .can-line-2 {
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	-webkit-box-orient: vertical;
+  }
+  
+  .can-line-3 {
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	line-clamp: 3;
+	-webkit-box-orient: vertical;
+  }
+  
+  /* 鼠标移入显示小手 */
+  .can-pointer{
+	cursor: pointer;
+  }

@@ -1,0 +1,61 @@
+@import './base.css';
+@import './can.css';
+
+
+html{
+  /* font-size: 14px; */
+  color: #707070;
+  /* caret-color: transparent; */
+}
+body{
+  /* min-width: 1280px; */
+}
+input{
+  color: #707070;
+  &::-webkit-input-placeholder {
+    color: #c0c4cc;
+  }
+}
+#app {
+  width: 100%;
+  height: 100%;
+  background:  #ecf5ff;
+}
+
+:root{
+  --header-height: 60px;
+  --menu-width: 200px;
+}
+
+
+
+/* .scrollbar::-webkit-scrollbar {
+  width: 50px;
+} */
+/* 整个滚动条 */
+.scrollbar::-webkit-scrollbar {
+  /* 对应纵向滚动条的宽度 */
+  width: 8px;
+  /* 对应横向滚动条的宽度 */
+  height: 0;
+}
+
+/* 滚动条上的滚动滑块 */
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #49b1f5;
+  background-image: -webkit-linear-gradient(45deg,
+            rgba(255, 255, 255, 0.4) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, 0.4) 50%,
+            rgba(255, 255, 255, 0.4) 75%,
+            transparent 75%,
+            transparent);
+  border-radius: 32px;
+}
+
+/* 滚动条轨道 */
+.scrollbar::-webkit-scrollbar-track {
+  background-color: #dbeffd;
+  border-radius: 32px;
+}
